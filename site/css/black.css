@@ -1,0 +1,205 @@
+body {
+        margin: 0;
+        background-color:#121818;
+        color: #b0b0b0;
+    }
+::-webkit-input-placeholder {color:#404040;text-shadow:0 0 0px}
+.head {
+    width:100%;
+    height:80px;
+    background: #202520;
+    box-shadow: 0px 10px 20px 0px #050505;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:10;
+}
+a {  color:#101010;
+     text-decoration:none;
+     margin-left:5px;
+     margin-right:5px;
+}
+a:hover {  color:white;
+     text-decoration:none;
+     margin-left:5px;
+     margin-right:5px;
+}
+.select:hover {
+    background-color:#403020;
+    cursor:default;
+}
+.tb {
+    padding:0px;
+    margin-left:5px;
+    margin-right:20px;
+    margin-bottom:5px;
+    cursor:default;
+}
+.tb th {
+    padding:3px;
+    border-collapse:separate;
+    background-color: #101010;
+}
+.tb td {
+    padding:3px;
+    border-style:solid;
+    border-collapse:separate;
+    border: 1px solid #303030;
+    border-bottom:1px solid #101010;
+    border-right:1px solid #101010;
+}
+.tb td:hover {
+    background-color:#203030;
+    cursor:default;
+}
+.tbp {
+    padding:0px;
+    margin-left:5px;
+    margin-right:20px;
+    margin-bottom:5px;
+    cursor:default;
+    color:#a0a0a0;
+    background-color:#202020;
+}
+.tbp th {
+    padding:3px;
+    background-color:#151515;
+    border: 1px solid #000000;
+    border-collapse:separate;
+}
+.tbp td {
+    padding:3px;
+    border-collapse:separate;
+    border: 1px solid #000000;
+}
+.tbp td:hover {
+    padding:3px;
+    border-collapse:separate;
+    border: 1px solid #b0b0b0;
+    background-color:inherit;
+}
+.content {
+    color: #b0b0b0;
+    background-color:#020802;
+    text-align:left;
+    height:100%;
+    width:100%;
+    font: 12pt Tahoma;
+}
+
+.but {
+    text-align:center;
+    background:#404040;
+    border: 1px solid #303030;
+    border-top:1px solid #606060;
+    border-left:1px solid #606060;
+    color:#AAA;
+}
+.but:hover {
+    text-decoration: none;
+    background:#303030;
+    color:#C0C0C0;
+    cursor:default;
+}
+.butmin {
+    border-radius:5px;
+    background:#021705;
+    border:1px solid  #001005;
+    border-left: 1px solid #003010;
+    border-top: 1px solid #003010;
+    padding:2px;
+    margin:5px;
+    font: 8pt monospace;
+    color:#108030;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+.butmin:hover {
+    text-shadow: 0px 0px 10px #00ff00;
+    color:#10D060;
+}
+.butmin:active {
+    background:#050805;
+}
+.itext {
+    background:#101010;
+    border-radius:8px;
+    border:1px solid  #000;
+    border-bottom:1px solid #333;
+    border-right:1px solid #333;
+    padding-left:5px;
+    padding-right:5px;
+}
+.itext:hover {
+    background:#000;
+}
+
+.login {
+    top:20%;
+    left:20%;
+    position:absolute;
+    width:400px;
+    padding:10px;
+    text-align:center;
+}
+.windowinfo {
+    background: #998;
+    border: 1px solid #222;
+    border-top:1px solid #DDD;
+    border-left:1px solid #DDD;
+    border-radius:5px;
+    box-shadow:5px 5px 10px 0px #000;
+    color:white;
+}
+
+.window {
+    background: #606060;
+    border: 1px solid #333;
+    border-top:1px solid #888;
+    border-left:1px solid #888;
+    border-radius:5px;
+    box-shadow:5px 5px 10px 0px #000;
+}
+.rusty      { color:#dfaf20; text-shadow: 0 0px 15px #ff8020;}
+.gray       { color:#a0a0a0;}
+.ice        { color:#00afdf;text-shadow: 0 0px 4px #0020ff;}
+.energy     { color:#8080f0; text-shadow: 0 0px 15px #0000ff;}
+.flame      { color:#b03010; text-shadow: 0 0px 15px #ff0000;}
+.code       { color: #20D060;text-shadow:0 0 10px #10A050;}
+.strong     { color:white;text-shadow: 0 0px 10px #AAAAAA;}
+strong      { color:white;text-shadow: 0 0px 10px #AAAAAA;}
+.alien      { color:#a0c0a0;text-shadow: 0 0px 10px #20ff20;}
+.autor      { font-family:serif;color:#20afdf;text-shadow: 0 0px 15px #2280ff;}
+
+.bg0        { background:black;}
+.bg1        { background:#182818;}
+.bg2        { background:#281818;}
+.bg3        { background:#052525;}
+.bg4        { background:#250525;}
+.bgh        { background:#202520;}
+.bgg        { background:#101010;}
+
+em          { color: #e0e0a0;}
+i           { color: #e0e0a0;}
+
+
+hr {
+    border:0px;
+    background: #a0a020;
+    size:2px;
+    height:1px;
+    
+}
+
+h1 {
+    color:#afaf90;
+    text-shadow: 0 0px 15px #908000;
+}
+
+h2 {
+    color:#00afdf;
+    text-shadow: 0 0px 4px #0020ff;
+}
+h3 {
+    color:#20a040;
+    text-shadow: 0 0px 5px #206020;
+}

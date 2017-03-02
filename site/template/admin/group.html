@@ -1,0 +1,18 @@
+<h1>Группа пользователей</h1>
+<div class='box bg1 maxw minh'>
+Редактирование группы пользователей
+</div>
+<div class='box bgh tmarg maxw'>
+   <table class='wall gray'>
+    <tr>    <td> Метка:         </td> <td><input  id='d_tag'          class='itext' type=text         size=10 value=''/></td></tr>
+    <tr>    <td> Описание:      </td> <td><input  id='d_title'        class='itext' type=text         size=40 value=''/></td></tr>
+   <table class='wall'>
+    <tr>
+        <td class='ltext select padd' onclick='async_get(LAST_PAGE,show_content);'><span class='energy'>Вернуться</span></td>
+        <td class='center select padd' onclick='delete_data();'><span class='flame'>Удалить</span></td>
+        <td class='rtext select padd' onclick='save_data();'><span class='rusty'>Сохранить</span></td>
+    </tr>
+   </table>
+</div>
+<div class='box bgh tmarg maxw minh' id='stat'> </div>
+

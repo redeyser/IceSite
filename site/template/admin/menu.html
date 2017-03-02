@@ -1,0 +1,25 @@
+<h1>Пункт меню</h1>
+<div class='box bg1 maxw minh'>
+Просмотр и редактирование конкретного пункта меню.
+</div>
+<div class='box bgh tmarg maxw'>
+   <table class='gray'>
+    <tr>    <td> Родитель:  </td> 
+            <td>
+                <select id='d_idhd' class='itext'>
+                </select>
+            </td>
+    </tr>
+    <tr>    <td> Тэг:               </td> <td><input  id='d_tag'       class='itext' type=text         size=10 value=''/></td></tr>
+    <tr>    <td> Наименование:      </td> <td><input  id='d_title'     class='itext' type=text         size=20 value=''/></td></tr>
+    <tr>    <td> Шаблон:            </td> <td><input  id='d_template'  class='itext' type=text         size=20 value=''/></td></tr>
+   </table>
+   <table class='wall'>
+    <tr>
+        <td class='ltext select padd' onclick='async_get(LAST_PAGE,show_content);'><span class='energy'>Вернуться</span></td>
+        <td class='center select padd' onclick='delete_data();'><span class='flame'>Удалить</span></td>
+        <td class='rtext select padd' onclick='save_data();'><span class='rusty'>Сохранить</span></td>
+    </tr>
+   </table>
+</div>
+<div class='box bgh tmarg maxw minh' id='stat'> </div>

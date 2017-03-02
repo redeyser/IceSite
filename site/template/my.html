@@ -1,0 +1,24 @@
+<h1>Персональные данные</h1>
+<div class='box bg1 maxw minh'>
+На этой странице вы можете отредактровать свои персональные данные. Например, изменить свой псевдоним. Также можно сменить свой пароль.
+</div>
+<div class='box bgh tmarg maxw'>
+   <table class='wall gray'>
+    <tr>    <td> Login:         </td> <td><input  id='d_login'       class='itext' type=text         size=10 value=''/></td></tr>
+    <tr>    <td> Псевдоним:     </td> <td><input  id='d_name'        class='itext' type=text         size=40 value=''/></td></tr>
+    <tr>    <td> CSS:           </td> 
+            <td>
+                <select id='d_css' class='itext'>
+                    <option value='black.css'>black.css</option>
+                </select>
+            </td>
+    </tr>
+    <tr>    <td> Пароль:        </td> <td><input  id='d_password'    class='itext' type=password    size=10 value=''/></td></tr>
+    </tr>
+   </table>
+   <table class='wall'>
+    <tr><td class='rtext select padd' onclick='save_data();'><span class='rusty'>Сохранить</span></td></tr>
+   </table>
+</div>
+<div class='box bgh tmarg maxw minh' id='stat'> </div>
+

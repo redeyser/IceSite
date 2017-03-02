@@ -1,0 +1,45 @@
+<h1>Настройки пользователей и групп</h1>
+<div class='box bg3 tmarg maxw'>
+   <table class='wall ltext' >
+   <tr>
+    <td>Принадлежность настройки:</td>
+    <td>
+        <select id='d_hd_type' class='itext' onchange='TYPE_HD=this.value;load_sphd();' >
+            <option selected value='1'>Группа</option>
+            <option value='0'>Пользователь</option>
+        </select>
+    </td>
+    <td>    
+        <select id='d_idhd' class='itext' onchange='get_data();'>
+        </select>
+    </td>
+   </tr>
+   <tr>
+    <td>Содержание настройки:</td>
+    <td>
+        <select id='d_ct_type' class='itext' onchange='TYPE_CT=this.value;load_spct();' >
+            <option value='0'>Пользователи</option>
+            <option value='1'>Права</option>
+            <option value='2'>Меню</option>
+            <option value='3'>Запросы</option>
+        </select>
+    </td>
+    <td>    
+        <select id='d_idct' class='itext'>
+        </select>
+    </td>
+   </tr>
+   </table>
+   <table class='wall'>
+    <tr>    
+        <td class='ltext select padd' onclick='get_data();'><span class='energy'>Просмотр</span></td>
+        <td class='rtext select padd' onclick='add_data();'><span class='rusty'>Добавить</span></td>
+    </tr>
+   </table>
+   <span id='stat'> </span>
+</div>
+<div class='box bgh tmarg maxw'>
+   <table class='wall ltext tb' id='tbdata'>
+   </table>
+</div>
+

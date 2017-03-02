@@ -1,0 +1,62 @@
+        <div class="head" style='margin-bottom:20px'>
+            <table class='hall wall padd'>
+                <tr>
+                <td class='center vtop' style='padding-right:20px'> 
+                    <span class='rusty bigest bold select' onclick='_relocate("/");'>ПИВТОЧКИ</span><br>
+                    <span id='curmenu' class='small strong'>Сайт для внутреннего использования</span><br>
+                </td>
+                <td  id='mainmenu' style='width:80%'> </td>
+                <td class='center vtop' style='padding-right:20px'> 
+                    <span class='flame big select' onclick='_getdata("/unlogin");_relocate("/");' >Выход</span><br>
+                    <span id='curmenu' class='small autor'>%user%</span>
+                </td>
+                </tr>
+            </table>
+        </div>
+        <div  class="posrel wall" style='top:80px'>
+            <div id='content' style='margin:20px'> Добро пожаловать на сайт для внутреннего использования. Выберите в меню интересующий вас раздел. </div>
+        </div>
+<script>
+get_mainmenu();
+function get_mainmenu(){
+    result=_getdata("/get/menu?id=0");
+    show_menu(result);
+}
+function show_menu(j){
+    MAX_COLUMN=5;
+    json=JSON.parse(j);
+    menu=json['menu'];
+    cur=json['curmenu'];
+    curmenu.innerHTML=cur['title'];
+    s="";
+    c=0;
+    for (i in menu){
+        if (c==0){  s=s+"<tr>";   }
+
+        if (menu[i]['template']==''){ on="async_get('/get/menu?id="+menu[i]['id']+"',show_menu)";  }
+        else { on="async_get('/template/"+menu[i]['template']+".html',show_content);"; }
+        if (menu[i]['tag']=='exit'){ cl=' flame' } else {cl='';}
+
+        s+="<td class='select padd"+cl+"' onclick=\""+on+"\">"+menu[i]['title']+"</td>";
+        c+=1;
+        if (c==MAX_COLUMN){  c=0;s=s+"</tr>";   }
+    }
+    if (c!=0){
+        s=s+"</tr>";
+    }
+    mainmenu.innerHTML="<table class='rusty'>"+s+"</table>";
+}
+function show_content(t,p){
+    THIS_PAGE=p;
+    content=document.getElementById('content');
+    content.innerHTML=t;
+    if (typeof script != "undefined"){
+        document.body.removeChild(script);
+    }
+    script = document.createElement('script');
+    script.src = p+'.js';
+    document.body.appendChild(script);
+    script.onload = function() {
+    }
+}
+</script>

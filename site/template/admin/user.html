@@ -1,0 +1,42 @@
+<h1>Пользователь</h1>
+<div class='box bg1 maxw minh'>
+Просмотр и редактирование пользовательских данных.
+</div>
+<div class='box bgh tmarg maxw'>
+   <table class='wall gray'>
+    <tr>    <td> Login:         </td> <td><input  id='d_login'       class='itext' type=text         size=10 value=''/></td></tr>
+    <tr>    <td> Псевдоним:     </td> <td><input  id='d_name'        class='itext' type=text         size=40 value=''/></td></tr>
+    <tr>    <td> Имя в чате:    </td> <td><input  id='d_chatname'    class='itext' type=text         size=40 value=''/></td></tr>
+    <tr>    <td> Привязка к системе:  </td> 
+            <td>
+                <select id='d_idreg' class='itext'>
+                </select>
+            </td>
+    </tr>
+    <tr>    <td> CSS:           </td> 
+            <td>
+                <select id='d_css' class='itext'>
+                    <option value='black.css'>black.css</option>
+                </select>
+            </td>
+    </tr>
+    <tr>    <td> Учетная запись активна:  </td> 
+            <td>
+                <select id='d_type' class='itext'>
+                    <option value='0'>Нет</option>
+                    <option value='1'>Да</option>
+                </select>
+            </td>
+    </tr>
+    <tr>    <td> Пароль:        </td> <td><input  id='d_password'    class='itext' type=password    size=10 value='' /></td></tr>
+    </tr>
+   </table>
+   <table class='wall'>
+    <tr>
+        <td class='ltext select padd' onclick='async_get(LAST_PAGE,show_content);'><span class='energy'>Вернуться</span></td>
+        <td class='center select padd' onclick='delete_data();'><span class='flame'>Удалить</span></td>
+        <td class='rtext select padd' onclick='save_data();'><span class='rusty'>Сохранить</span></td>
+    </tr>
+   </table>
+</div>
+<div class='box bgh tmarg maxw minh' id='stat'> </div>

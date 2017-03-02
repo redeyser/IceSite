@@ -1,0 +1,42 @@
+<h1>Просмотр чеков</h1>
+
+<div class='box bg3 tmarg' style="max-width:1300px">
+<span class='norm alien'>Заголовок чека</span>
+   <table class='wall ltext' >
+        <tr> <td>Подразделение:</td> <td id='td_idreg'></td>     <td>Отмена:</td> <td id='td_ispayed'></td>  <td>Бонусная карта:</td>   <td><span id='td_isbonuscard'></span><span id='td_bonus_card'></span></td></tr>  
+        <tr> <td>Торговый объект:</td> <td id='td_idplace'></td> <td>Тип чека:</td> <td id='td_type'></td>   <td>Процент карты:</td> <td id='td_bonus_proc'></td></tr>  
+        <tr> <td>Номер кассы:</td> <td id='td_nkassa'></td>      <td>Наличие чека:</td> <td id='td_isfiscal'></td> <td>Остаток карты:</td> <td id='td_bonus_sum'></td></tr>
+        <tr> <td>Период нач:</td> <td id='td_date1'></td>        <td>Ошибки:</td> <td id='td_iserror'></td>  <td>Тип Операции:</td> <td id='td_bonus_type'></td></tr>   
+        <tr> <td>Период кон:</td> <td id='td_date2'></td>        <td>ЕГАИС:</td> <td id='td_isegais'></td>   <td>Начислено:</td> <td id='td_bonus'></td>  </tr> 
+        <tr> <td>Время:</td> <td> <span id='td_time1'></span> <span id='td_time2'></span></td>  <td>Номер чека:</td> <td id='td_ncheck'></td> <td>Списано:</td> <td id='td_bonus_discount'></td></tr>
+        <tr> <td>Дисконтная карта:</td> <td><span id='td_isdiscountcard'></span><span id='td_discount_card'></span></td></tr>
+        <tr> <td>Процент карты:</td> <td id='td_discount_proc'></td> <td>Сумма ВСЕГО:</td> <td id='td_summa'></td></tr>
+        <tr> <td>Сумма скидки:</td> <td id='td_discount_sum'></td>   <td>Сумма ИТОГО:</td> <td id='td_summa_wod'></td><td>Тип оплаты:</td> <td id='td_type_pay'></td></tr>
+   </table>
+   <table class='wall'>
+    <tr>    
+        <td class='ltext select padd' onclick='run_query("short");'><span class='rusty'>Фильтр содержимого чеков</span></td>
+        <td class='rtext select padd' onclick='run_query("full");'><span class='rusty'>Выбрать чеки полностью</span></td>
+    </tr>
+   </table>
+   <span id='stat'> </span>
+</div>
+
+<div class='box bg3' style="margin-top:5px;max-width:1300px">
+<span class='norm alien'>Содержимое чека</span>
+   <table class='wall ltext' >
+        <tr><td>Код товара</td>     <td id="td_code">       </td><td>Цена исходная</td>  <td id="td_p_cena">        </td><td>Цена продажи</td><td id="td_paramf1"></tr>
+        <tr><td>Код группы</td>     <td id="td_p_idgroup">  </td><td>Огранич.цены</td>   <td id="td_limitprice">    </td><td>Количество</td>  <td id="td_paramf2"></tr>
+        <tr><td>Секция</td>         <td id="td_p_section">  </td><td>Измененная цена</td><td id="td_ch_cena">       </td><td>Стоимость</td>   <td id="td_paramf3"></tr>
+        <tr><td>Сторно</td>         <td id="td_storno">     </td><td>Макс. скидка</td>   <td id="td_p_max_skid">    </td><td>Отметки</td>     <td id="td_mark"> </tr>
+        <tr><td>Весовой</td>        <td id="td_p_real">     </td><td>Бонус%</td>         <td id="td_ct_bonus">      </td><td>Литраж</td>      <td id="td_p_litrag"></tr>
+        <tr><td>Алкоголь</td>       <td id="td_p_alco">     </td><td>Скидка%</td>        <td id="td_discount">      </td><td>Колич.бонусное</td><td id="td_dcount"></tr>
+        <tr><td></td>               <td>                    </td><td>Спис. бонуса%</td>  <td id="td_ct_bonus_discount"></td><td>Штрихкод</td><td id='td_p_shk'></td></tr>
+   </table>
+</div>
+
+<div class='box bgh tmarg' style="margin-top:5px;max-width:1300px">
+   <table class='wall ltext tb' id='tbdata'>
+   </table>
+</div>
+
